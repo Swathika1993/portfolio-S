@@ -27,8 +27,17 @@ const portraitSrc = resolveImagePath(profile.portrait);
 
 app.innerHTML = `
   <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="custom-cursor-dot" aria-hidden="true"></div>
+  <div class="custom-cursor-ring" aria-hidden="true"></div>
+
   <header>
-    ${profile.name ? `<div class="brand">${profile.name}</div>` : ''}
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      ${profile.name ? `<div class="brand">${profile.name}</div>` : ''}
+      <div class="status-indicator">
+        <span class="status-dot"></span>
+        <span>Open to Opportunities</span>
+      </div>
+    </div>
     ${profile.location ? `<div class="location-tag">${profile.location}</div>` : ''}
   </header>
 
@@ -169,6 +178,10 @@ app.innerHTML = `
       <span>People &middot; Digital Marketing &middot; Content &amp; Engagement</span>
     </footer>
   </main>
+
+  <button class="back-to-top-btn" aria-label="Back to top">
+    <span>&uarr; Top</span>
+  </button>
 `;
 
 const portraitImage = app.querySelector('.portrait-img');
@@ -180,27 +193,60 @@ if (portraitImage) {
 
 const progressBar = document.querySelector('.scroll-progress');
 const revealElements = document.querySelectorAll('.reveal-item');
+const backToTopBtn = document.querySelector('.back-to-top-btn');
+const cursorDot = document.querySelector('.custom-cursor-dot');
+const cursorRing = document.querySelector('.custom-cursor-ring');
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const supportsIntersectionObserver = 'IntersectionObserver' in window;
 
-function updateScrollProgress() {
-  if (!progressBar) return;
+function updateScrollFeatures() {
   const docHeight = document.documentElement.scrollHeight - window.innerHeight;
   const ratio = docHeight > 0 ? Math.min(Math.max(window.scrollY / docHeight, 0), 1) : 0;
-  progressBar.style.transform = `scaleX(${ratio})`;
+  if (progressBar) progressBar.style.transform = `scaleX(${ratio})`;
+
+  if (backToTopBtn) {
+    backToTopBtn.classList.toggle('is-active', window.scrollY > 380);
+  }
+}
+
+if (backToTopBtn) {
+  backToTopBtn.addEventListener('click', () => {
+    if (prefersReducedMotion) {
+      window.scrollTo(0, 0);
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  });
+}
+
+if (cursorDot && cursorRing && !prefersReducedMotion && window.matchMedia('(pointer: fine)').matches) {
+  window.addEventListener('mousemove', event => {
+    cursorDot.style.left = `${event.clientX}px`;
+    cursorDot.style.top = `${event.clientY}px`;
+    cursorRing.style.left = `${event.clientX}px`;
+    cursorRing.style.top = `${event.clientY}px`;
+  }, { passive: true });
+
+  const interactiveElements = document.querySelectorAll(
+    'a, button, .project-card, .expertise-card, .blog-card, .portrait-frame'
+  );
+  interactiveElements.forEach(el => {
+    el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+    el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+  });
 }
 
 function revealVisibleElements() {
   const triggerBottom = window.innerHeight * 0.96;
   revealElements.forEach(el => {
     if (el.classList.contains('is-visible')) return;
-    const rect = el.getBoundingClientRect();
-    if (rect.top <= triggerBottom) {
+    if (el.getBoundingClientRect().top <= triggerBottom) {
       el.classList.add('is-visible');
     }
   });
 }
 
-if (prefersReducedMotion || !('IntersectionObserver' in window)) {
+if (prefersReducedMotion || !supportsIntersectionObserver) {
   revealElements.forEach(el => el.classList.add('is-visible'));
 } else {
   document.documentElement.classList.add('anim-ready');
@@ -218,20 +264,16 @@ if (prefersReducedMotion || !('IntersectionObserver' in window)) {
   );
 
   revealElements.forEach(el => observer.observe(el));
-
-  requestAnimationFrame(() => {
-    revealVisibleElements();
-  });
-
-  window.addEventListener('scroll', () => {
-    updateScrollProgress();
-    revealVisibleElements();
-  }, { passive: true });
-
-  window.addEventListener('resize', () => {
-    updateScrollProgress();
-    revealVisibleElements();
-  }, { passive: true });
-
-  updateScrollProgress();
+  requestAnimationFrame(revealVisibleElements);
 }
+
+function handleScrollOrResize() {
+  updateScrollFeatures();
+  if (!prefersReducedMotion && supportsIntersectionObserver) {
+    revealVisibleElements();
+  }
+}
+
+window.addEventListener('scroll', handleScrollOrResize, { passive: true });
+window.addEventListener('resize', handleScrollOrResize, { passive: true });
+updateScrollFeatures();
