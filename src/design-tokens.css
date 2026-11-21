@@ -1,0 +1,17 @@
+:root {
+  --color-bg: #FAF6F2;
+  --color-surface: #E8D5CB;
+  --color-accent: #C49A88;
+  --color-text: #75574D;
+  --color-border: #C49A88;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+
+  --ease-smooth: cubic-bezier(0.2, 0.8, 0.2, 1);
+}

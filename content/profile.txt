@@ -1,0 +1,102 @@
+=== PROFILE ===
+name = Swathika Janakiraman
+role = Digital Marketer · Content, SMM & Brand Storyteller
+tagline = People | Digital Marketing | Content & Engagement. Creating meaningful connections through people, content, communication, and digital experiences.
+email = swathikaofficial1993@gmail.com
+location = Chennai, India
+portrait = ./images/portrait.png
+experience = 13+ Years People Experience · Specialized in SMM, Content Strategy & Employer Branding
+
+=== BIO ===
+Welcome to my professional space. I am a digital marketer based in Chennai specializing in content strategy, social media marketing (SMM), brand storytelling, and audience engagement. Bringing 13+ years of professional background in HR, workplace culture, and people operations, I combine a deep understanding of human psychology with creative digital communication.
+
+I believe the right message, delivered through the right channel, creates lasting connections, strengthens brands, and inspires action. My work bridges people-centric thinking with modern digital marketing—turning audience intent into engaging content calendars, authentic employer branding, and sustainable digital visibility.
+
+=== EXPERTISE ===
+title = Content Marketing & Digital Strategy
+summary = Creating high-value editorial copy, blogs, landing page messaging, and structured content hubs that communicate value, build trust, and rank on search and answer engines.
+focus = Content Strategy, SEO & AEO Copywriting, Editorial Hubs, Creative Communication, AI-Assisted Content
+
+title = Social Media Marketing (SMM) & Brand Storytelling
+summary = Building active social media platforms, audience-focused hook variations, community engagement, and consistent brand narratives that move beyond vanity metrics.
+focus = Social Media Marketing, Brand Storytelling, Personal Branding, Community Engagement, Campaign Ideation
+
+title = Employer Branding & People-Centric Marketing
+summary = Leveraging 13+ years of people and culture foundations to position organizations and leaders authentically through workplace storytelling and culture communication.
+focus = Employer Branding, Workplace Storytelling, Audience Experience, Internal-to-External Alignment, Retention
+
+=== PROJECTS ===
+title = Social Media Content & Community Growth
+description = Conceptualized multi-platform social media calendars, engaging hook variations, and educational carousels that drive genuine audience interaction and brand recall.
+image = ./images/project-1.png
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+metric = SMM & Engagement
+tags = Social Media Marketing, SMM, Community Building, Creative Copy
+
+title = Content Strategy & Editorial Storytelling
+description = Structured search-optimized blog clusters and website copy designed for reader retention, authoritative brand voice, and discoverability on both search and AI answer engines.
+image = ./images/project-2.png
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+metric = Content & SEO
+tags = Content Marketing, Copywriting, SEO, AEO, Editorial
+
+title = Employer Brand & Personal Identity Systems
+description = Translated company values and workplace culture into digital narratives that attract talent and position leaders authentically across LinkedIn and digital channels.
+image = ./images/project-3.png
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+metric = Employer Branding
+tags = Employer Branding, Personal Branding, People & Culture, Storytelling
+
+=== BLOGS ===
+title = Personal Branding in the Digital Age
+summary = Your digital presence is often the first impression. Personal branding is about communicating strengths, values, and individuality consistently.
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+tag = Personal Branding
+
+title = Content Is More Than Just Posting
+summary = Successful content is defined by relevance, authenticity, and creating a genuine connection with the audience rather than publishing volume.
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+tag = Content Strategy
+
+title = The Power of Storytelling in Marketing
+summary = Communicating challenges, values, and human emotions enables brands to create connections that go far beyond products and services.
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+tag = Brand Storytelling
+
+title = Building Engagement Beyond Likes
+summary = Genuine conversations, constructive feedback, and community building are far stronger indicators of digital presence than raw vanity numbers.
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+tag = SMM & Engagement
+
+title = Why Authenticity Matters in Digital Marketing
+summary = In an oversaturated feed, audience loyalty forms around communication that feels honest, human, and grounded in real experiences.
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+tag = Digital Marketing
+
+title = Employer Branding in the Digital World
+summary = Making workplace culture, team experiences, and leadership visible to attract aligned talent and build organizational reputation.
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+tag = Employer Branding
+
+title = Creativity and Strategy Go Hand in Hand
+summary = Creative hooks capture initial attention, but strategic audience understanding and purpose give marketing sustained direction.
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+tag = Marketing Strategy
+
+title = The Role of AI in Content Creation
+summary = Combining emerging AI efficiency with essential human judgment, emotional intelligence, and genuine voice.
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+tag = AI & Content
+
+title = Creating Content That Connects
+summary = Grounding content development in deep empathy for people's real challenges, everyday questions, and professional goals.
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+tag = Audience Intent
+
+title = Digital Marketing Is About Relationships
+summary = Moving past one-off promotions to nurture trust, deliver consistent value, and cultivate communities over time.
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+tag = Relationship Marketing
+
+=== SOCIALS ===
+LinkedIn | https://www.linkedin.com/in/swathika-janakiraman-664815196
