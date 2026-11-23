@@ -1,16 +1,52 @@
 === PROFILE ===
 name = Swathika Janakiraman
-role = Digital Marketer · Content, SMM & Brand Storyteller
-tagline = People | Digital Marketing | Content & Engagement. Creating meaningful connections through people, content, communication, and digital experiences.
+role = Digital Marketer · Content, SMM, Brand Storytelling & Poster Design
+tagline = People | Digital Marketing | Content & Poster Design. Creating meaningful connections through visual storytelling, communication, and digital experiences.
 email = swathikaofficial1993@gmail.com
 location = Chennai, India
-portrait = ./images/portrait.png
-experience = 13+ Years People Experience · Specialized in SMM, Content Strategy & Employer Branding
+experience = 13+ Years People Experience · Specialized in SMM, Content Strategy, Employer Branding & Poster Design
 
 === BIO ===
-Welcome to my professional space. I am a digital marketer based in Chennai specializing in content strategy, social media marketing (SMM), brand storytelling, and audience engagement. Bringing 13+ years of professional background in HR, workplace culture, and people operations, I combine a deep understanding of human psychology with creative digital communication.
+Welcome to my professional space. I am a digital marketer based in Chennai specializing in social media marketing (SMM), content strategy, poster design, brand storytelling, and audience engagement. Bringing 13+ years of professional background in HR, workplace culture, and people operations, I combine a deep understanding of human psychology with creative visual communication.
 
-I believe the right message, delivered through the right channel, creates lasting connections, strengthens brands, and inspires action. My work bridges people-centric thinking with modern digital marketing—turning audience intent into engaging content calendars, authentic employer branding, and sustainable digital visibility.
+Every poster, social post, and narrative is crafted to communicate a clear message quickly—blending visual hierarchy, relatable storytelling, and audience intent so brands and ideas stand out across digital channels.
+
+=== POSTERS ===
+title = Campaign & Visual Poster Showcase
+category = Poster Design & Visual Communication
+summary = Poster creative designed to communicate a clear message quickly with structured visual hierarchy and audience appeal.
+image = ./images/Canva Poster.png
+tags = Poster Design, Visual Communication, Brand Creatives
+
+title = Social & Campaign Poster Series — 01
+category = Social Media & Campaign Posters
+summary = Visual poster layout crafted for social media reach, engagement, and consistent brand storytelling.
+image = ./images/1.jpg
+tags = Poster Design, SMM Creatives, Campaign Design
+
+title = Engagement & Messaging Poster — 02
+category = Audience & Event Posters
+summary = Clean typography and balanced composition built to highlight key themes and encourage audience response.
+image = ./images/2.png
+tags = Poster Design, Audience Engagement, Visual Storytelling
+
+title = Editorial & Storytelling Poster — 03
+category = Brand & Editorial Posters
+summary = Poster composition pairing relatable messaging with eye-catching visual structure for digital sharing.
+image = ./images/3.png
+tags = Poster Design, Brand Storytelling, Content Creatives
+
+title = Creative Variation & Visual Study — 04
+category = Visual Variations & Layouts
+summary = Alternative visual framing and layout exploration tailored to strengthen message clarity across channels.
+image = ./images/4.png
+tags = Poster Design, Creative Direction, Layout Design
+
+title = Culture, People & Community Poster — 05
+category = People & Community Posters
+summary = Human-centered poster design reflecting empathy, connection, and shared organizational or campaign themes.
+image = ./images/5.png
+tags = Poster Design, Employer Branding, People & Culture
 
 === EXPERTISE ===
 title = Content Marketing & Digital Strategy
@@ -97,6 +133,32 @@ title = Digital Marketing Is About Relationships
 summary = Moving past one-off promotions to nurture trust, deliver consistent value, and cultivate communities over time.
 url = https://www.linkedin.com/in/swathika-janakiraman-664815196
 tag = Relationship Marketing
+
+=== CERTIFICATIONS ===
+title = Certification — Digital Marketing & Social Media (Update Title)
+issuer = LinkedIn / Issuing Platform
+area = Digital Marketing & SMM
+url = https://lnkd.in/p/g8bpXNEb
+
+title = Certification — Content Strategy & Communication (Update Title)
+issuer = LinkedIn / Issuing Platform
+area = Content & Brand Storytelling
+url = https://lnkd.in/p/gBisRWvy
+
+title = Certification — Visual & Poster Design (Update Title)
+issuer = LinkedIn / Issuing Platform
+area = Poster Design & Visuals
+url = https://lnkd.in/p/gu3pzKjX
+
+title = Certification — Employer Branding & Audience Engagement (Update Title)
+issuer = LinkedIn / Issuing Platform
+area = Employer Branding & SMM
+url = https://lnkd.in/p/gwmTyjGU
+
+title = Certification — People, Culture & Workplace Growth (Update Title)
+issuer = LinkedIn / Issuing Platform
+area = People & Culture
+url = https://lnkd.in/p/g4afn3MW
 
 === SOCIALS ===
 LinkedIn | https://www.linkedin.com/in/swathika-janakiraman-664815196

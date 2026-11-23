@@ -24,7 +24,9 @@ try {
     socials: [],
     projects: [],
     expertise: [],
-    blogs: []
+    posters: [],
+    blogs: [],
+    certifications: []
   };
 
   let currentSection = '';
@@ -52,12 +54,29 @@ try {
           ? currentItem.focus.split(',').map(focus => focus.trim()).filter(Boolean)
           : []
       });
+    } else if (currentSection === 'POSTERS' && (currentItem.title || currentItem.image || currentItem.summary)) {
+      data.posters.push({
+        title: currentItem.title || '',
+        category: currentItem.category || 'Poster Design',
+        summary: currentItem.summary || '',
+        image: currentItem.image || '',
+        tags: currentItem.tags
+          ? currentItem.tags.split(',').map(tag => tag.trim()).filter(Boolean)
+          : []
+      });
     } else if (currentSection === 'BLOGS' && (currentItem.title || currentItem.summary)) {
       data.blogs.push({
         title: currentItem.title || '',
         summary: currentItem.summary || '',
         url: currentItem.url || '',
         tag: currentItem.tag || ''
+      });
+    } else if (currentSection === 'CERTIFICATIONS' && (currentItem.title || currentItem.url)) {
+      data.certifications.push({
+        title: currentItem.title || '',
+        issuer: currentItem.issuer || '',
+        area: currentItem.area || '',
+        url: currentItem.url || ''
       });
     }
 
@@ -91,7 +110,13 @@ try {
       if (parts.length >= 2) {
         data.socials.push({ label: parts[0], url: parts[1] });
       }
-    } else if (currentSection === 'PROJECTS' || currentSection === 'EXPERTISE' || currentSection === 'BLOGS') {
+    } else if (
+      currentSection === 'PROJECTS' ||
+      currentSection === 'EXPERTISE' ||
+      currentSection === 'POSTERS' ||
+      currentSection === 'BLOGS' ||
+      currentSection === 'CERTIFICATIONS'
+    ) {
       const eqIdx = line.indexOf('=');
       if (eqIdx !== -1) {
         const key = line.slice(0, eqIdx).trim();

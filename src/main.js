@@ -7,7 +7,9 @@ const {
   bio = [],
   expertise = [],
   projects = [],
+  posters = [],
   blogs = [],
+  certifications = [],
   socials = []
 } = profileData;
 
@@ -20,12 +22,29 @@ function resolveImagePath(rawPath) {
     return rawPath;
   }
   const cleanPath = rawPath.replace(/^\.?\//, '');
-  return `${baseUrl.replace(/\/?$/, '/')}${cleanPath}`;
+  const encodedPath = cleanPath
+    .split('/')
+    .map(segment => encodeURIComponent(segment))
+    .join('/');
+  return `${baseUrl.replace(/\/?$/, '/')}${encodedPath}`;
 }
 
-const portraitSrc = resolveImagePath(profile.portrait);
+function escapeHTML(value) {
+  return String(value ?? '').replace(/[&<>"']/g, character => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  }[character]));
+}
 
 app.innerHTML = `
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-sunbeam"></div>
+    <div class="ambient-shadow-left"></div>
+    <div class="ambient-shadow-right"></div>
+  </div>
   <div class="scroll-progress" aria-hidden="true"></div>
   <div class="custom-cursor-dot" aria-hidden="true"></div>
   <div class="custom-cursor-ring" aria-hidden="true"></div>
@@ -43,17 +62,18 @@ app.innerHTML = `
 
   <main>
     <section class="hero reveal-item">
-      <div class="hero-inner">
-        <div>
+      <div class="hero-inner hero-inner--full">
+        <div class="hero-copy">
           ${profile.role ? `<div class="hero-role">${profile.role}</div>` : ''}
           <h1 class="hero-title">Creating meaningful connections through content, communication, and digital experiences.</h1>
           ${profile.tagline ? `<p class="hero-tagline">${profile.tagline}</p>` : ''}
-        </div>
-        ${portraitSrc ? `
-          <div class="portrait-frame">
-            <img class="portrait-img" src="${portraitSrc}" alt="${profile.name || 'Swathika Janakiraman'} portrait" />
+          <div class="hero-highlights">
+            <span>13+ Years People Experience</span>
+            <span>Social Media &amp; Content Strategy</span>
+            <span>Poster Design &amp; Visual Storytelling</span>
+            <span>Employer Branding</span>
           </div>
-        ` : ''}
+        </div>
       </div>
     </section>
 
@@ -131,6 +151,55 @@ app.innerHTML = `
       </section>
     ` : ''}
 
+    ${posters.length ? `
+      <section class="work-section" id="poster-works">
+        <div class="section-header-row reveal-item">
+          <div class="section-meta">
+            <span class="section-index">03B</span>
+            <h2 class="section-label">Poster Designs &amp; Visual Works</h2>
+          </div>
+        </div>
+        <div class="posters-grid">
+          ${posters.map((poster, idx) => {
+            const posterSrc = resolveImagePath(poster.image);
+            const title = poster.title || 'Poster Design';
+            const category = poster.category || 'Poster Design';
+            const altText = `${title} — ${category} by ${profile.name || 'Swathika Janakiraman'}`;
+            return `
+              <article class="poster-card reveal-item" style="transition-delay: ${(idx % 3) * 80}ms;">
+                ${posterSrc ? `
+                  <button
+                    type="button"
+                    class="poster-thumb-btn"
+                    data-poster-src="${escapeHTML(posterSrc)}"
+                    data-poster-title="${escapeHTML(title)}"
+                    data-poster-alt="${escapeHTML(altText)}"
+                    aria-label="Preview ${escapeHTML(title)}"
+                  >
+                    <img
+                      class="poster-img"
+                      src="${escapeHTML(posterSrc)}"
+                      alt="${escapeHTML(altText)}"
+                    />
+                  </button>
+                ` : ''}
+                <div class="poster-body">
+                  ${poster.category ? `<span class="poster-category">${escapeHTML(poster.category)}</span>` : ''}
+                  <h3 class="poster-title">${escapeHTML(title)}</h3>
+                  ${poster.summary ? `<p class="poster-summary">${escapeHTML(poster.summary)}</p>` : ''}
+                  ${poster.tags && poster.tags.length ? `
+                    <div class="project-tags">
+                      ${poster.tags.map(tag => `<span class="tag">${escapeHTML(tag)}</span>`).join('')}
+                    </div>
+                  ` : ''}
+                </div>
+              </article>
+            `;
+          }).join('')}
+        </div>
+      </section>
+    ` : ''}
+
     ${blogs.length ? `
       <section class="work-section">
         <div class="section-header-row reveal-item">
@@ -146,6 +215,27 @@ app.innerHTML = `
               <h3 class="blog-title">${post.title}</h3>
               <p class="blog-summary">${post.summary}</p>
               ${post.url ? `<a href="${post.url}" target="_blank" rel="noopener noreferrer" class="project-link">Read on LinkedIn &rarr;</a>` : ''}
+            </article>
+          `).join('')}
+        </div>
+      </section>
+    ` : ''}
+
+    ${certifications.length ? `
+      <section class="work-section" id="certifications">
+        <div class="section-header-row reveal-item">
+          <div class="section-meta">
+            <span class="section-index">04B</span>
+            <h2 class="section-label">Certifications by Focus Area</h2>
+          </div>
+        </div>
+        <div class="certifications-grid">
+          ${certifications.map((cert, idx) => `
+            <article class="cert-card reveal-item" style="transition-delay: ${(idx % 3) * 75}ms;">
+              ${cert.area ? `<span class="tag">${escapeHTML(cert.area)}</span>` : ''}
+              <h3 class="cert-title">${escapeHTML(cert.title)}</h3>
+              ${cert.issuer ? `<p class="cert-issuer">${escapeHTML(cert.issuer)}</p>` : ''}
+              ${cert.url ? `<a href="${escapeHTML(cert.url)}" target="_blank" rel="noopener noreferrer" class="project-link">Verify Credential &rarr;</a>` : ''}
             </article>
           `).join('')}
         </div>
@@ -182,13 +272,68 @@ app.innerHTML = `
   <button class="back-to-top-btn" aria-label="Back to top">
     <span>&uarr; Top</span>
   </button>
+  ${posters.length ? `
+    <div class="poster-lightbox" id="poster-lightbox" aria-hidden="true">
+      <div class="poster-lightbox-backdrop" data-close-lightbox></div>
+      <figure class="poster-lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="poster-lightbox-caption" tabindex="-1">
+        <button type="button" class="poster-lightbox-close" data-close-lightbox aria-label="Close poster preview">&times;</button>
+        <img id="poster-lightbox-img" src="" alt="" />
+        <figcaption id="poster-lightbox-caption"></figcaption>
+      </figure>
+    </div>
+  ` : ''}
 `;
 
-const portraitImage = app.querySelector('.portrait-img');
-if (portraitImage) {
-  portraitImage.addEventListener('error', () => {
-    portraitImage.parentElement.hidden = true;
-  }, { once: true });
+const lightbox = document.querySelector('#poster-lightbox');
+const lightboxImg = document.querySelector('#poster-lightbox-img');
+const lightboxCaption = document.querySelector('#poster-lightbox-caption');
+
+if (lightbox && lightboxImg && lightboxCaption) {
+  const closeButton = lightbox.querySelector('.poster-lightbox-close');
+  let previouslyFocusedElement = null;
+
+  function closePosterLightbox() {
+    lightbox.classList.remove('is-open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('poster-lightbox-open');
+    lightboxImg.src = '';
+    lightboxImg.alt = '';
+    lightboxCaption.textContent = '';
+    if (previouslyFocusedElement) previouslyFocusedElement.focus();
+  }
+
+  document.querySelectorAll('.poster-thumb-btn').forEach(btn => {
+    const thumbnail = btn.querySelector('.poster-img');
+    thumbnail.addEventListener('error', () => {
+      btn.hidden = true;
+    }, { once: true });
+
+    btn.addEventListener('click', () => {
+      previouslyFocusedElement = btn;
+      lightboxImg.src = btn.dataset.posterSrc || '';
+      lightboxImg.alt = btn.dataset.posterTitle || 'Poster design preview';
+      lightboxCaption.textContent = btn.dataset.posterTitle || '';
+      lightbox.classList.add('is-open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('poster-lightbox-open');
+      closeButton.focus();
+    });
+  });
+
+  lightbox.querySelectorAll('[data-close-lightbox]').forEach(closeTrigger => {
+    closeTrigger.addEventListener('click', closePosterLightbox);
+  });
+  lightbox.addEventListener('keydown', event => {
+    if (event.key === 'Tab') {
+      event.preventDefault();
+      closeButton.focus();
+    }
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && lightbox.classList.contains('is-open')) {
+      closePosterLightbox();
+    }
+  });
 }
 
 const progressBar = document.querySelector('.scroll-progress');
@@ -228,7 +373,7 @@ if (cursorDot && cursorRing && !prefersReducedMotion && window.matchMedia('(poin
   }, { passive: true });
 
   const interactiveElements = document.querySelectorAll(
-    'a, button, .project-card, .expertise-card, .blog-card, .portrait-frame'
+    'a, button, .project-card, .expertise-card, .blog-card'
   );
   interactiveElements.forEach(el => {
     el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
