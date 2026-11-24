@@ -134,6 +134,30 @@ summary = Moving past one-off promotions to nurture trust, deliver consistent va
 url = https://www.linkedin.com/in/swathika-janakiraman-664815196
 tag = Relationship Marketing
 
+title = How Indian Firms Can generate qualified B2B Leads through email marketing
+url = https://lnkd.in/p/gXsuSMa5
+tag = Email Marketing
+
+title = Psychology Behind a winning Sales Pitch for proprietary firms
+url = https://lnkd.in/p/gDXXePVm
+tag = Sales Pitch
+
+title = From Stranger to Customer – The ideal B2B Marketing funnel
+url = https://lnkd.in/p/g2s-hrKd
+tag = Marketing Funnel
+
+title = Why 90% if B2B Buyers watch videos before contacting the company
+url = https://lnkd.in/p/g2s-hrKd
+tag = Video Marketing
+
+title = How Claude AI helps build B2B Sales Funnels – Overview
+url = https://lnkd.in/p/g_HHczbk
+tag = AI Sales Funnel
+
+title = How to create a content calendar that delivers the results
+url = https://lnkd.in/p/g_HHczbk
+tag = Content Calendar
+
 === CERTIFICATIONS ===
 title = Certification — Digital Marketing & Social Media
 issuer = LinkedIn / Issuing Platform
