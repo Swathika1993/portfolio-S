@@ -161,7 +161,7 @@ tag = Content Calendar
 === CERTIFICATIONS ===
 title = Certification — Digital Marketing & Social Media
 issuer = LinkedIn / Issuing Platform
-area = Digital Marketing & SMM
+area = Email Marketing
 url = https://lnkd.in/p/g8bpXNEb
 
 title = Certification — Content Strategy & Communication
