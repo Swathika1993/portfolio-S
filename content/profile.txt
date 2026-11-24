@@ -1,0 +1,188 @@
+=== PROFILE ===
+name = Swathika Janakiraman
+role = Digital Marketer · Content, SMM, Brand Storytelling & Poster Design
+tagline = People | Digital Marketing | Content & Poster Design. Creating meaningful connections through visual storytelling, communication, and digital experiences.
+email = swathikaofficial1993@gmail.com
+location = Chennai, India
+experience = 13+ Years People Experience · Specialized in SMM, Content Strategy, Employer Branding & Poster Design
+
+=== BIO ===
+Welcome to my professional space. I am a digital marketer based in Chennai specializing in social media marketing (SMM), content strategy, poster design, brand storytelling, and audience engagement. Bringing 13+ years of professional background in HR, workplace culture, and people operations, I combine a deep understanding of human psychology with creative visual communication.
+
+Every poster, social post, and narrative is crafted to communicate a clear message quickly—blending visual hierarchy, relatable storytelling, and audience intent so brands and ideas stand out across digital channels.
+
+=== POSTERS ===
+title = Campaign & Visual Poster Showcase
+category = Poster Design & Visual Communication
+summary = Poster creative designed to communicate a clear message quickly with structured visual hierarchy and audience appeal.
+image = ./images/Canva Poster.png
+tags = Poster Design, Visual Communication, Brand Creatives
+
+title = Social & Campaign Poster Series — 01
+category = Social Media & Campaign Posters
+summary = Visual poster layout crafted for social media reach, engagement, and consistent brand storytelling.
+image = ./images/1.jpg
+tags = Poster Design, SMM Creatives, Campaign Design
+
+title = Engagement & Messaging Poster — 02
+category = Audience & Event Posters
+summary = Clean typography and balanced composition built to highlight key themes and encourage audience response.
+image = ./images/2.png
+tags = Poster Design, Audience Engagement, Visual Storytelling
+
+title = Editorial & Storytelling Poster — 03
+category = Brand & Editorial Posters
+summary = Poster composition pairing relatable messaging with eye-catching visual structure for digital sharing.
+image = ./images/3.png
+tags = Poster Design, Brand Storytelling, Content Creatives
+
+title = Creative Variation & Visual Study — 04
+category = Visual Variations & Layouts
+summary = Alternative visual framing and layout exploration tailored to strengthen message clarity across channels.
+image = ./images/4.png
+tags = Poster Design, Creative Direction, Layout Design
+
+title = Culture, People & Community Poster — 05
+category = People & Community Posters
+summary = Human-centered poster design reflecting empathy, connection, and shared organizational or campaign themes.
+image = ./images/5.png
+tags = Poster Design, Employer Branding, People & Culture
+
+=== EXPERTISE ===
+title = Content Marketing & Digital Strategy
+summary = Creating high-value editorial copy, blogs, landing page messaging, and structured content hubs that communicate value, build trust, and rank on search and answer engines.
+focus = Content Strategy, SEO & AEO Copywriting, Editorial Hubs, Creative Communication, AI-Assisted Content
+
+title = Social Media Marketing (SMM) & Brand Storytelling
+summary = Building active social media platforms, audience-focused hook variations, community engagement, and consistent brand narratives that move beyond vanity metrics.
+focus = Social Media Marketing, Brand Storytelling, Personal Branding, Community Engagement, Campaign Ideation
+
+title = Employer Branding & People-Centric Marketing
+summary = Leveraging 13+ years of people and culture foundations to position organizations and leaders authentically through workplace storytelling and culture communication.
+focus = Employer Branding, Workplace Storytelling, Audience Experience, Internal-to-External Alignment, Retention
+
+=== PROJECTS ===
+title = Social Media Content & Community Growth
+description = Conceptualized multi-platform social media calendars, engaging hook variations, and educational carousels that drive genuine audience interaction and brand recall.
+image = ./images/project-1.png
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+metric = SMM & Engagement
+tags = Social Media Marketing, SMM, Community Building, Creative Copy
+
+title = Content Strategy & Editorial Storytelling
+description = Structured search-optimized blog clusters and website copy designed for reader retention, authoritative brand voice, and discoverability on both search and AI answer engines.
+image = ./images/project-2.png
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+metric = Content & SEO
+tags = Content Marketing, Copywriting, SEO, AEO, Editorial
+
+title = Employer Brand & Personal Identity Systems
+description = Translated company values and workplace culture into digital narratives that attract talent and position leaders authentically across LinkedIn and digital channels.
+image = ./images/project-3.png
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+metric = Employer Branding
+tags = Employer Branding, Personal Branding, People & Culture, Storytelling
+
+=== BLOGS ===
+title = Personal Branding in the Digital Age
+summary = Your digital presence is often the first impression. Personal branding is about communicating strengths, values, and individuality consistently.
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+tag = Personal Branding
+
+title = Content Is More Than Just Posting
+summary = Successful content is defined by relevance, authenticity, and creating a genuine connection with the audience rather than publishing volume.
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+tag = Content Strategy
+
+title = The Power of Storytelling in Marketing
+summary = Communicating challenges, values, and human emotions enables brands to create connections that go far beyond products and services.
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+tag = Brand Storytelling
+
+title = Building Engagement Beyond Likes
+summary = Genuine conversations, constructive feedback, and community building are far stronger indicators of digital presence than raw vanity numbers.
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+tag = SMM & Engagement
+
+title = Why Authenticity Matters in Digital Marketing
+summary = In an oversaturated feed, audience loyalty forms around communication that feels honest, human, and grounded in real experiences.
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+tag = Digital Marketing
+
+title = Employer Branding in the Digital World
+summary = Making workplace culture, team experiences, and leadership visible to attract aligned talent and build organizational reputation.
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+tag = Employer Branding
+
+title = Creativity and Strategy Go Hand in Hand
+summary = Creative hooks capture initial attention, but strategic audience understanding and purpose give marketing sustained direction.
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+tag = Marketing Strategy
+
+title = The Role of AI in Content Creation
+summary = Combining emerging AI efficiency with essential human judgment, emotional intelligence, and genuine voice.
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+tag = AI & Content
+
+title = Creating Content That Connects
+summary = Grounding content development in deep empathy for people's real challenges, everyday questions, and professional goals.
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+tag = Audience Intent
+
+title = Digital Marketing Is About Relationships
+summary = Moving past one-off promotions to nurture trust, deliver consistent value, and cultivate communities over time.
+url = https://www.linkedin.com/in/swathika-janakiraman-664815196
+tag = Relationship Marketing
+
+title = How Indian Firms Can generate qualified B2B Leads through email marketing
+url = https://lnkd.in/p/gXsuSMa5
+tag = Email Marketing
+
+title = Psychology Behind a winning Sales Pitch for proprietary firms
+url = https://lnkd.in/p/gDXXePVm
+tag = Sales Pitch
+
+title = From Stranger to Customer – The ideal B2B Marketing funnel
+url = https://lnkd.in/p/g2s-hrKd
+tag = Marketing Funnel
+
+title = Why 90% if B2B Buyers watch videos before contacting the company
+url = https://lnkd.in/p/g2s-hrKd
+tag = Video Marketing
+
+title = How Claude AI helps build B2B Sales Funnels – Overview
+url = https://lnkd.in/p/g_HHczbk
+tag = AI Sales Funnel
+
+title = How to create a content calendar that delivers the results
+url = https://lnkd.in/p/g_HHczbk
+tag = Content Calendar
+
+=== CERTIFICATIONS ===
+title = Certification — Digital Marketing & Social Media
+issuer = LinkedIn / Issuing Platform
+area = Email Marketing
+url = https://lnkd.in/p/g8bpXNEb
+
+title = Certification — Content Strategy & Communication
+issuer = LinkedIn / Issuing Platform
+area = Content & Brand Storytelling
+url = https://lnkd.in/p/gBisRWvy
+
+title = Certification — Visual & Poster Design
+issuer = LinkedIn / Issuing Platform
+area = Poster Design & Visuals
+url = https://lnkd.in/p/gu3pzKjX
+
+title = Certification — Employer Branding & Audience Engagement
+issuer = LinkedIn / Issuing Platform
+area = Employer Branding & SMM
+url = https://lnkd.in/p/gwmTyjGU
+
+title = Certification — People, Culture & Workplace Growth
+issuer = LinkedIn / Issuing Platform
+area = People & Culture
+url = https://lnkd.in/p/g4afn3MW
+
+=== SOCIALS ===
+LinkedIn | https://www.linkedin.com/in/swathika-janakiraman-664815196
